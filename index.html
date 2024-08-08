@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <div class="w-screen h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+        <div class="flex flex-col items-center">
+            <h3 class="text-center text-xl font-semibold mb-4">Password Length</h3>
+            
+            <div class="max-w-md w-full mb-4">
+                <label for="numeric-digits" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number of numeric digits</label>
+                <input type="number" id="numeric-digits" class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Number of numeric digits" required />
+            </div>
+    
+            <div class="max-w-md w-full mb-4">
+                <label for="uppercase-letters" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number of uppercase letters</label>
+                <input type="number" id="uppercase-letters" class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Number of uppercase letters" required />
+            </div>
+    
+            <div class="max-w-md w-full mb-4">
+                <label for="lowercase-letters" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number of lowercase letters</label>
+                <input type="number" id="lowercase-letters" class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Number of lowercase letters" required />
+            </div>
+    
+            <button type="button" id="PasswordGenerate" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                Generate Password
+            </button>
+        </div>
+
+        <div class="my-3">
+            <strong id="showCode"></strong>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
